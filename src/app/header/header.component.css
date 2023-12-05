@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat&display=swap');
+
+span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+img {
+    width: 120px;
+    /* margin-left: -30px; */
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+}
+
+.logo:hover{
+    color: #20654D;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+div > a{
+    margin-right: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+div > a :hover{
+    color: aquamarine;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button :hover{
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}

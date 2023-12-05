@@ -1,0 +1,306 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Berries Cupcake",
+      "image": "Berries Summer Cupcakes",
+      "ingredients": "Sugar, flour, butter, cream cheese, lemon juice, edible colour, eggs.",
+      "rating": 4,
+      "price": 140,
+      "categories": "cake"
+    },
+    {
+      "id": 2,
+      "productName": "Cherry Jelly Cheesecake",
+      "image": "Cherry Jelly Cheesecake",
+      "ingredients": "Vanilla essence, chopped pineapple, almonds, sugar, flour, dairy cream",
+      "rating": 3.5,
+      "price": 290,
+      "categories": "cake"
+    },
+    {
+      "id": 3,
+      "productName": "Chocolate Blueberries Cake",
+      "image": "Chocolate Blueberries Cake",
+      "ingredients": "Dark chocolate, cocoa powder, flour, butter, sugar, coffee powder, dairy cream.",
+      "rating": 4.1,
+      "price": 350,
+      "categories": "cake"
+    },
+    {
+      "id": 4,
+      "productName": "Chocolate Summer Berries",
+      "image": "Chocolate Summer Berries",
+      "ingredients": "Vanilla Essence, Oil, Coffee Powder, Dark Chocolate, Dairy cream, Cocoa butter, Orange",
+      "rating": 4.2,
+      "price": 390,
+      "categories": "cake"
+    },
+    {
+      "id": 5,
+      "productName": "Classic Cheesecake",
+      "image": "Classic Cheesecake",
+      "ingredients": "Vanilla essence, chopped pineapple, almonds, sugar, flour, dairy cream, Cocoa butter",
+      "rating": 3.9,
+      "price": 320,
+      "categories": "cake"
+    },
+    {
+      "id": 6,
+      "productName": "Cookies Cream Cake",
+      "image": "Cookies Cream Cake",
+      "ingredients": "Dark chocolate, cocoa powder, flour, butter, sugar, coffee powder, dairy cream, Cocoa butter",
+      "rating": 3.8,
+      "price": 280,
+      "categories": "cake"
+    },
+    {
+      "id": 7,
+      "productName": "Easter Cupcakes",
+      "image": "Easter Cupcakes",
+      "ingredients": "Refined flour, Cocoa Powder, Castor sugar, Eggs, Baking soda, Salt, White Vinegar",
+      "rating": 4,
+      "price": 260,
+      "categories": "cake"
+    },
+    {
+      "id": 8,
+      "productName": "Monster Theme Cake",
+      "image": "Monster Theme Cake",
+      "ingredients": "Cocoa butter,Liquid Glucose, Grain Sugar, mix Chocolate coated crispy, White chocolate",
+      "rating": 4.4,
+      "price": 480,
+      "categories": "cake"
+    },
+    {
+      "id": 9,
+      "productName": "Pumpkin Spice Cupcakes",
+      "image": "Pumpkin Spice Cupcakes",
+      "ingredients": "Dark, milk & white chocolate, dairy cream,  mix Chocolate coated crispy, White chocolate",
+      "rating": 4.7,
+      "price": 550,
+      "categories": "cake"
+    },
+    {
+      "id": 10,
+      "productName": "Fruit Cake",
+      "image": "Fruit Cake",
+      "ingredients": "Vanilla essence, chopped pineapple, almonds, sugar, flour, dairy cream",
+      "rating": 4.6,
+      "price": 490,
+      "categories": "cake"
+    },
+    {
+      "id": 11,
+      "productName": "Chocolate Cupcake",
+      "image": "Chocolate Cupcake",
+      "ingredients": "Dark chocolate, cocoa powder, flour, sugar, oil, eggs, butter, dairy cream.",
+      "rating": 3.6,
+      "price": 190,
+      "categories": "cake"
+    },
+    {
+      "id": 12,
+      "productName": "Butter Cookies",
+      "image": "Butter Cookies",
+      "ingredients": "Wheat Flour, Sugar, Almond Flour, Whey Protein Vanilla Flavour",
+      "rating": 4.1,
+      "price": 220,
+      "categories": "cookies"
+    },
+    {
+      "id": 13,
+      "productName": "Chocolate Cookies",
+      "image": "Chocolate Cookies",
+      "ingredients": "Wheat flour, sugar, dark chocolate, sugar, butter, eggs, Fresh milk, Maida, Guar Gum Powder",
+      "rating": 4.2,
+      "price": 240,
+      "categories": "cookies"
+    },
+    {
+      "id": 14,
+      "productName": "Muffin Devil Horns",
+      "image": "Muffin Devil Horns",
+      "ingredients": "Whole wheat flour, brown sugar, cocoa, flax seed, almonds, butter,  mix Chocolate coated crispy, White chocolate",
+      "rating": 3.8,
+      "price": 240,
+      "categories": "brownies"
+    },
+    {
+      "id": 15,
+      "productName": "Muffin Ghost",
+      "image": "Muffin Ghost",
+      "ingredients": "Flour, sugar, cocoa powder, butter, dark chocolate, walnuts, Fresh milk, Maida, Guar Gum Powder",
+      "rating": 3.9,
+      "price": 210,
+      "categories": "brownies"
+    },
+    {
+      "id": 16,
+      "productName": "Brownies Different Flavor",
+      "image": "Brownies Different Flavor",
+      "ingredients": "coconut, sugar, condensed milk, cocoa powder, Sugar, Cream Cheese, Butter, Fresh milk, Maida, Guar Gum Powder",
+      "rating": 4.3,
+      "price": 260,
+      "categories": "brownies"
+    },
+    {
+      "id": 17,
+      "productName": "Isometric choco brownies",
+      "image": "Isometric chocolate brownies",
+      "ingredients": "Flour, sugar, eggs, cocoa powder, butter, dark chocolate, Cream Cheese, Butter, Fresh milk, Maida, Guar Gum Powder",
+      "rating": 4.8,
+      "price": 360,
+      "categories": "brownies"
+    }
+  ],
+  "ProductRequest": [
+    {
+      "customerName": "Kabeer Singh",
+      "customerEmail": "kabeer@gmail.com",
+      "customerPhone": "7596321045",
+      "quantity": 5,
+      "address": "",
+      "name": "Cookies Cream Cake",
+      "id": 1
+    },
+    {
+      "customerName": "Arpit Shrivastava",
+      "customerEmail": "arpit@gmail.com",
+      "customerPhone": "7596321452",
+      "quantity": 2,
+      "street": "Ankan",
+      "city": "Niwari",
+      "postalCode": "471001",
+      "country": "India",
+      "name": "Cookies Cream Cake",
+      "id": 2
+    },
+    {
+      "customerName": "Rahul Khare",
+      "customerEmail": "kabeer@gmail.com",
+      "customerPhone": "7596321045",
+      "quantity": 5,
+      "street": "Rajendra Nagar",
+      "city": "Indore",
+      "postalCode": "452012",
+      "country": "India",
+      "name": "Berries Cupcake",
+      "id": 3
+    },
+    {
+      "dateOfOrder": "2023-08-15T18:30:00.000Z",
+      "customerName": "Arpit Shrivastava",
+      "customerEmail": "rahul@gmail.com",
+      "customerPhone": "7596321045",
+      "quantity": 2,
+      "street": "Rajendra Nagar",
+      "city": "Niwari",
+      "postalCode": "471001",
+      "state": "mp",
+      "country": "indian",
+      "name": "Cherry Jelly Cheesecake",
+      "id": 4
+    },
+    {
+      "dateOfOrder": "2023-08-15T18:30:00.000Z",
+      "customerName": "Rahul Khare",
+      "customerEmail": "arpit@gmail.com",
+      "customerPhone": "8745203651",
+      "quantity": 3,
+      "street": "Rajendra Nagar",
+      "city": "Indore",
+      "postalCode": "452012",
+      "state": "Madhya Pradesh",
+      "country": "India",
+      "name": "Berries Cupcake",
+      "id": 5
+    },
+    {
+      "dateOfOrder": "2023-08-14T18:30:00.000Z",
+      "customerName": "Arpit Shrivastava",
+      "customerEmail": "arpit@gmail.com",
+      "customerPhone": "7585632012",
+      "quantity": 1,
+      "street": "Rajendra Nagar",
+      "city": "Niwari",
+      "postalCode": "471001",
+      "state": "mp",
+      "country": "India",
+      "name": "Chocolate Blueberries Cake",
+      "id": 6
+    },
+    {
+      "dateOfOrder": "2023-08-14T18:30:00.000Z",
+      "customerName": "Arpit Shrivastava",
+      "customerEmail": "arpit@gmail.com",
+      "customerPhone": "7585632012",
+      "quantity": 3,
+      "street": "Rajendra Nagar",
+      "city": "Niwari",
+      "postalCode": "471001",
+      "name": "Cherry Jelly Cheesecake",
+      "id": 7
+    },
+    {
+      "dateOfOrder": "2023-08-13T18:30:00.000Z",
+      "customerName": "Arush Khare",
+      "customerEmail": "rahul@gmail.com",
+      "customerPhone": "8596201456",
+      "quantity": 1,
+      "street": "Ankan",
+      "city": "Niwari",
+      "postalCode": "471001",
+      "state": "mp",
+      "country": "India",
+      "name": "Classic Cheesecake",
+      "totalAmount": 320,
+      "id": 8
+    },
+    {
+      "dateOfOrder": "2023-08-14T18:30:00.000Z",
+      "customerName": "Samarth Rai",
+      "customerEmail": "samarth2006@gmail.com",
+      "customerPhone": "7852631023",
+      "quantity": 2,
+      "street": "Chaubey Colony",
+      "city": "Chhatarpur",
+      "postalCode": "471001",
+      "state": "Madhya radesh",
+      "country": "India",
+      "name": "Monster Theme Cake",
+      "totalAmount": 960,
+      "id": 9
+    },
+    {
+      "customerName": "Nikhil Shrivastava",
+      "customerEmail": "nikhis@gmail.com",
+      "customerPhone": "8965201456",
+      "quantity": 2,
+      "street": "Khard Colony",
+      "city": "Tikamgarh",
+      "postalCode": "410002",
+      "state": "Madhya radesh",
+      "country": "India",
+      "dateOfOrder": "2023-08-14T18:30:00.000Z",
+      "name": "Butter Cookies",
+      "totalAmount": 440,
+      "id": 10
+    },
+    {
+      "dateOfOrder": "2023-08-16T18:30:00.000Z",
+      "customerName": "Harsh",
+      "customerEmail": "harsh@gmail.com",
+      "customerPhone": "9852413065",
+      "quantity": 1,
+      "street": "Rajendra Nagar",
+      "city": "Indore",
+      "postalCode": "452012",
+      "state": "Madhya radesh",
+      "country": "India",
+      "name": "Muffin Devil Horns",
+      "totalAmount": 240,
+      "id": 11
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+#Product-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#Product{
+    width: 600px;
+}
+
+/* #Product>img {
+    width: 450px;
+    height: 400px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 8px;
+} */
+#Product>img {
+    width: 450px;
+    /* height: 300px; */
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#Product:hover>img {
+    transform: scale(1.1);
+}
+
+#Product>h1 {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+}
+
+#Product > p{
+    width: 460px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#Product > h2 {
+    margin-left: 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+
+#Product-Form{
+    margin-left: 180px;
+}
+
+
+#Product-Form > h3{
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#Product-Form > mat-form-field {
+    width: 250px;
+    margin-right: 50px; 
+}
+
+button{
+    display: block;
+}

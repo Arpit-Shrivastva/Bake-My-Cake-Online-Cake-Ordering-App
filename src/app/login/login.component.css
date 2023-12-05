@@ -1,0 +1,35 @@
+#login-form {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  /* margin-bottom: 263px; */
+}
+
+button {
+  margin-left: 10px;
+  max-width: 150px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.example-card {
+  margin-left: 500px;
+  margin-top: 100px;
+  width: 400px;
+  margin-bottom: 41px;
+}
+
+h3,mat-card-title,mat-form-field, button{
+  font-family: 'Playfair Display', serif;
+}
+
+.example-form {
+  margin-left: 40px;
+  width: 50px;
+}
+
+h3{
+  margin-left: 20px;
+  margin-top: 10px;
+}

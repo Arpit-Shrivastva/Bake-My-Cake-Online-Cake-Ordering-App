@@ -1,0 +1,27 @@
+<mat-card class="product-card">
+    <img mat-card-image class="img" src="../../assets/{{product.image}}.jpg">
+    <!-- <mat-card-header>
+        <mat-card-title class="product-title"> Product id: {{product.id}} </mat-card-title>
+    </mat-card-header> -->
+    <mat-card-header>
+        <mat-card-title class="product-title">{{product.productName}} </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p style="font-weight: 600; font-family: 'Montserrat', sans-serif">Per kg | <img width="15px" height="13px" src="../../assets/pngegg.png" alt="rs"> {{product.price}} only</p>
+    </mat-card-content>
+    <mat-card-content>
+        <p><b>Ingredients :</b> {{product.ingredients}}</p>
+    </mat-card-content>
+    <mat-card-content>
+        <p> <b>Rating :</b> {{product.rating}} <img src="../../assets/rating.jpg" alt=""></p>
+    </mat-card-content>
+    <!-- <mat-card-actions>  -->
+    <!-- <mat-icon routerLink="/cake-view/{{product.id}}" class="shop-icon" color="primary"
+            matTooltip="add to cart">shopping_bag</mat-icon> 
+    </mat-card-actions> -->
+    <button class="btn" mat-raised-button color="primary" routerLink="/cake-view/{{product.id}}">Buy Now</button>
+    <!-- <mat-icon>favorite</mat-icon>
+        <mat-icon>delete</mat-icon> -->
+    <!-- </span> -->
+</mat-card>
+<!-- <router-outlet></router-outlet> -->

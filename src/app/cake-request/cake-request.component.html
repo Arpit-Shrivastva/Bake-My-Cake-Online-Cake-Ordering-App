@@ -1,0 +1,84 @@
+<mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. arpit" #input>
+</mat-form-field>
+
+<section id="request-section">
+    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+        <!-- Date of Order Column -->
+        <ng-container matColumnDef="dateOfOrder">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Date of Order</th>
+            <td mat-cell *matCellDef="let element"> {{element.dateOfOrder}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="customerName">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.customerName}} </td>
+        </ng-container>
+
+        <!-- Email Column -->
+        <ng-container matColumnDef="customerEmail">
+            <th mat-header-cell *matHeaderCellDef> Email </th>
+            <td mat-cell *matCellDef="let element"> {{element.customerEmail}} </td>
+        </ng-container>
+
+        <!-- Phone Column -->
+        <ng-container matColumnDef="customerPhone">
+            <th mat-header-cell *matHeaderCellDef> Phone </th>
+            <td mat-cell *matCellDef="let element"> {{element.customerPhone}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Product Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="quantity">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Quantity </th>
+            <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="totalAmount">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Total Amount </th>
+            <td mat-cell *matCellDef="let element"> {{element.totalAmount}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="street">
+            <th mat-header-cell *matHeaderCellDef> Street </th>
+            <td mat-cell *matCellDef="let element"> {{element.street}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="city">
+            <th mat-header-cell *matHeaderCellDef> City </th>
+            <td mat-cell *matCellDef="let element"> {{element.city}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="postalCode">
+            <th mat-header-cell *matHeaderCellDef> Postal Code </th>
+            <td mat-cell *matCellDef="let element"> {{element.postalCode}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="state">
+            <th mat-header-cell *matHeaderCellDef> State </th>
+            <td mat-cell *matCellDef="let element"> {{element.state}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="country">
+            <th mat-header-cell *matHeaderCellDef> Country </th>
+            <td mat-cell *matCellDef="let element"> {{element.country}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</section>
+
+<button id="add" mat-mini-fab matTooltip="logout" routerLink="/login" (click)="reload()" color="warn">
+    <mat-icon>logout</mat-icon>
+</button>

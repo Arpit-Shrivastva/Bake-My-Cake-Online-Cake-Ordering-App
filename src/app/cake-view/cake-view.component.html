@@ -1,0 +1,133 @@
+<section id="Product-content">
+    <div id="Product">
+        <h1>{{product?.productName}}</h1>
+        <img src="../../assets/{{product?.image}}.jpg">
+        <p><b>Ingredients :</b> {{product?.ingredients}}</p>
+        <p>Rating: {{product?.rating}}
+        <img src="../../assets//rating.jpg" alt="">
+        </p>
+        <h2>Price : <img width="18px" height="18px" src="../../assets/pngegg.png" alt="">{{product?.price}} | Per kg</h2>
+    </div>
+
+    <section>
+        <form id="Product-Form" (ngSubmit)="makeRequest()" #orderForm="ngForm">
+            <h3>Enter Order details</h3>
+
+            <mat-form-field>
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="picker" required name="dateOfOrder"
+                    [(ngModel)]="productRequest.dateOfOrder" #dateOfOrder="ngModel" min="2023-08-11" />
+                <mat-error *ngIf="dateOfOrder.invalid && (dateOfOrder.dirty || dateOfOrder.touched)">
+                    Date is required.
+                </mat-error>
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput type="text" required placeholder="Name" name="customerName"
+                    [(ngModel)]="productRequest.customerName" #customerName="ngModel" minlength="5" />
+                <mat-error *ngIf="customerName.invalid && (customerName.dirty || customerName.touched)">
+                    Name is required.
+                </mat-error>
+                <mat-error *ngIf="customerName.errors?.['minlength']">Name Length Should Be Greater Than 5 words</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput type="email" required placeholder="Email" name="customerEmail"
+                    [(ngModel)]="productRequest.customerEmail" #customerEmail="ngModel"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <mat-error *ngIf="customerEmail.invalid && (customerEmail.dirty || customerEmail.touched)">
+                    Please provide a valid email.
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Phone</mat-label>
+                <input matInput type="tel" required placeholder="Phone" name="customerPhone"
+                    [(ngModel)]="productRequest.customerPhone" pattern="^[7-9]\d{9}$" #customerPhone="ngModel">
+                <mat-error *ngIf="customerPhone.invalid && (customerPhone.dirty || customerPhone.touched)">
+                    Phone number is required.
+                </mat-error>
+                <mat-error *ngIf="customerPhone.errors?.['pattern']">Enter valid phone number containing 10 digits starting with
+                    7/8/9</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Quantity</mat-label>
+                <input matInput type="number" required placeholder="Quantity" name="quantity"
+                    [(ngModel)]="productRequest.quantity" min="0" #quantity="ngModel" (input)="calculateTotal()">
+                <mat-error *ngIf="quantity.invalid && (quantity.dirty || quantity.touched)">
+                    Please provide a valid quantity.
+                </mat-error>
+            </mat-form-field>
+
+            <!-- <mat-form-field>
+                <mat-label>Price</mat-label>
+                <input matInput type="number" required placeholder="Price" name="price" [(ngModel)]="productRequest.price" min="0"
+                    #price="ngModel" >
+                <mat-error *ngIf="price.invalid && (price.dirty || price.touched)">
+                    Please provide a valid price.
+                </mat-error>
+            </mat-form-field>    -->
+            <div>
+                <p style="color: white;">Total Price: {{ totalPrice }}</p>
+            </div>
+
+            <mat-label
+                style="display: block; font-size: 20px; font-weight: 500; margin-bottom: 15px;">Address</mat-label>
+
+            <mat-form-field>
+                <mat-label>Street</mat-label>
+                <input matInput type="text" required placeholder="Street" name="street"
+                    [(ngModel)]="productRequest.street" #street="ngModel">
+                <mat-error *ngIf="street.invalid && (street.dirty || street.touched)">
+                    Street is required.
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>City</mat-label>
+                <input matInput type="text" required placeholder="City" name="city" [(ngModel)]="productRequest.city"
+                    #city="ngModel">
+                <mat-error *ngIf="city.invalid && (city.dirty || city.touched)">
+                    City is required.
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Postal Code</mat-label>
+                <input matInput type="text" required placeholder="Postal Code" pattern="^[0-9]{5,6}$" name="postalCode"
+                    [(ngModel)]="productRequest.postalCode" #postalCode="ngModel">
+                <mat-error *ngIf="postalCode.invalid && (postalCode.dirty || postalCode.touched)">
+                    Postal code is required.
+                </mat-error>
+                <mat-error *ngIf="postalCode.errors?.['pattern']">Invalid Zip Code</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>State</mat-label>
+                <input matInput type="text" required placeholder="State" name="state" [(ngModel)]="productRequest.state"
+                    #state="ngModel">
+                <mat-error *ngIf="state.invalid && (state.dirty || state.touched)">
+                    state is required.
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Country</mat-label>
+                <input matInput type="text" required placeholder="Country" name="country"
+                    [(ngModel)]="productRequest.country" #country="ngModel">
+                <mat-error *ngIf="country.invalid && (country.dirty || country.touched)">
+                    Country is required.
+                </mat-error>
+            </mat-form-field>
+
+            <button mat-flat-button color="primary" [disabled]="orderForm.invalid" type="submit">Order</button>
+        </form>
+    </section>
+
+</section>
+<!-- <router-outlet></router-outlet> -->

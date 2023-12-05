@@ -1,0 +1,40 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <!-- <mat-card-header>If You Are Admin Person</mat-card-header> -->
+        <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form">
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Username" [(ngModel)]="userName" name="username" required>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td><mat-form-field class="example-full-width">
+                            <input matInput placeholder="Password" [(ngModel)]="password" type="password"
+                                name="password" required>
+                        </mat-form-field></td>
+                </tr>
+            </table>
+            <!-- <div id="login-form"> -->
+            <!-- <h3>If you are a Admin Person, enter your Security Code</h3> -->
+            <mat-form-field>
+                <!-- <mat-label>Enter Security Code</mat-label> -->
+                <input matInput type="password" name="adminSecurityCode" [(ngModel)]="adminSecurityCode"
+                    placeholder="Admin Security Code" #adminCode="ngModel" required />
+                <!-- <mat-error *ngIf="adminCode.errors?.['required']">Admin Security Code is Required</mat-error> -->
+            </mat-form-field>
+            <!-- <button mat-raised-button color="primary" (click)="validateCode()">Submit</button> -->
+            <!-- </div> -->
+        </form>
+    </mat-card-content>
+    <button mat-raised-button style="margin-left: 100px;" (click)="submit()" color="primary">Login</button>
+
+    <span *ngIf="showCorrectLogin"> <button mat-button color="accent">Login success !!</button></span>
+    <span *ngIf="showInCorrectLogin"> <button mat-button color="accent">Enter correct Crenditials</button></span>
+    <h3>If you are a Visitor, <a routerLink="/">click here</a></h3>
+</mat-card>

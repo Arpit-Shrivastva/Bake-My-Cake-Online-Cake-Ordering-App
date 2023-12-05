@@ -1,0 +1,21 @@
+#request-section {
+    margin-bottom: 500px;
+}
+
+#add {
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    margin: 50px;
+    padding: 1px;
+}
+
+table {
+    width: 100%;
+}
+
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
