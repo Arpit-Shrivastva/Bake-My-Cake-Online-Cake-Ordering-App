@@ -1,5 +1,9 @@
 # BakeMyCake
 
+Bake My Cake is an innovative online cake ordering application developed using Angular framework, TypeScript, HTML, and CSS. With a user-friendly interface, it allows customers to effortlessly browse through a delectable range of cakes, place orders, and customize their sweet treats. The application ensures a seamless and delightful experience, combining the power of Angular for robust functionality and an appealing design crafted with HTML and CSS.
+
+Technologies - Angular, Html, Css, Typescript, Json
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
 ## Development server
