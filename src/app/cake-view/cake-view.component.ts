@@ -42,6 +42,7 @@ export class CakeViewComponent implements OnInit {
       this.productRequest.totalAmount = this.totalPrice;
       this.productReqService.getSaveProduct(this.productRequest).subscribe({
         next: data => {
+          this.payNow();
           this.snackBar.open("Thankyou For Order", "Success", {
             duration: 5000
           });
