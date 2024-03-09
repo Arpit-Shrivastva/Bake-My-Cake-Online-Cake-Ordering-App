@@ -6,6 +6,8 @@ import { ProductService } from '../services/product.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { CakeRequestService } from '../services/cake-request.service';
 
+declare var Razorpay: any;
+
 @Component({
   selector: 'app-cake-view',
   templateUrl: './cake-view.component.html',
